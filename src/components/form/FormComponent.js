@@ -27,9 +27,8 @@ const FormComponent = ({info,setInfo,handleFormSubmit}) => {
                 href="https://github.com/clarusway"
                 className="design"
                 target="_blank"
-                rel="noopener noreferrer"
-                >
-                <code>{'<Clarusway/> '}</code>
+                rel="noopener noreferrer">
+                <code>{'<Clarusway/>'}</code>
                 </a>
                 <span className="design header">design</span>
             </div>

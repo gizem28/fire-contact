@@ -3,6 +3,7 @@ import { deleteInfo, useFetch} from '../../utils/functions';
 
 const Contacts = ({editHandler}) => {
   const { contactList, isLoading } = useFetch();
+  
   return (
     <div>
       <h2 className="contact-header">Contacts</h2>
