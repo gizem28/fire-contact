@@ -3,6 +3,7 @@ import { useState } from 'react';
 import  FormComponent  from './components/form/FormComponent';
 import Contacts from "./components/contacts/Contacts";
 import { addInfo, updateInfo } from './utils/functions';
+import { ToastContainer } from 'react-toastify';
 
 const initialValues={username:"",
  phoneNumber:"", gender:"No Info"}
@@ -26,6 +27,7 @@ function App() {
       <FormComponent info={info} setInfo={setInfo} 
       handleFormSubmit={handleFormSubmit}/>
       <Contacts editHandler={editHandler}/>
+      <ToastContainer/>
     </div>
   );
 }

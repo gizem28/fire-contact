@@ -2,6 +2,7 @@ import firebase from "./firebase";
 import {getDatabase, ref, push, set, onValue ,query, remove, child,
 update} from "firebase/database";
 import { useEffect, useState } from "react";
+import { successNote } from "./customTostify";
 
 export const addInfo=(info)=>{
     const db=getDatabase();
@@ -12,7 +13,7 @@ export const addInfo=(info)=>{
         phoneNumber:info.phoneNumber,
         gender:info.gender
     })
-    console.log("veri eklendi");
+    successNote("Successfully added");
 };
 
 export const useFetch=()=>{
@@ -44,6 +45,7 @@ export const deleteInfo=(id)=>{
     const db=getDatabase();
     // const userRef=ref(db, "contact")
     remove(ref(db, "contact/" +id ))
+    successNote("Deleted")
 }
 
 export const updateInfo=(info)=>{
@@ -52,5 +54,4 @@ export const updateInfo=(info)=>{
     const updates={};
     updates["contact/"+newUserKey]=info;
     return update(ref(db), updates)
-
 }
