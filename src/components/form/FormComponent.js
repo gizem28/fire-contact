@@ -11,6 +11,7 @@ const FormComponent = ({info,setInfo,handleFormSubmit}) => {
     setInfo({...info,[name]:value})
 
   }
+  //semantic ui bir e ve value degeri gelir
   const handleOptionChange=(e,values)=>{
     const {name,value}=values
     setInfo({...info,[name]:value.toUpperCase()})
@@ -76,4 +77,4 @@ const FormComponent = ({info,setInfo,handleFormSubmit}) => {
     )
 }
 
-export default FormComponent
+export default FormComponent;
