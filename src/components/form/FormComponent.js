@@ -14,7 +14,7 @@ const FormComponent = ({info,setInfo,handleFormSubmit}) => {
   //semantic ui bir e ve value degeri gelir
   const handleOptionChange=(e,values)=>{
     const {name,value}=values
-    setInfo({...info,[name]:value.toUpperCase()})
+    setInfo({...info,[name]:value})
 
   }
 
@@ -23,14 +23,7 @@ const FormComponent = ({info,setInfo,handleFormSubmit}) => {
          <Grid.Column style={{ width: 300 }}>
             <div className="ui piled segments">
             <div className="ui segment brand">
-                <a
-                href="https://github.com/clarusway"
-                className="design"
-                target="_blank"
-                rel="noopener noreferrer">
-                <code>{'<Clarusway/>'}</code>
-                </a>
-                <span className="design header">design</span>
+                <h1>CONTACT APP</h1>
             </div>
             </div>
             <h2 className="contact-header">Add Contact</h2>

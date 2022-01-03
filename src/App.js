@@ -20,7 +20,7 @@ function App() {
    
   }
   const editHandler=(id, username, phoneNumber, gender)=>{
-    setInfo({id, username, phoneNumber, gender})
+    setInfo({id, username, phoneNumber, gender});
   }
   return (
     <div className='App'>
